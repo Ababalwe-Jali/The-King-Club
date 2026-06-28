@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers - The King Club</title>
+<meta name="description" content="Explore open roles at The King Club and apply directly from the careers page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<div class="curtain"><img src="../assets/images/King-logo.png" alt="Company Logo" class="curtain__logo"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="../assets/images/King-logo.png" alt="Company Logo" class="brand__logo">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="about.html" class="nav-link">Our Story</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="careers.html" class="nav-link is-active">Careers</a></li>
+        <li><a href="contact.html" class="nav-link">Visit Us</a></li>
+      </ul>
+      <a href="contact.html#reserve" class="btn btn-menu">Reserve</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero--page careers-hero">
+    <div class="hero__bg">
+      <img loading="eager" src="../assets/images/Screenshot_20260626-183547~2.png" alt="The King Club team preparing the dining room for service">
+    </div>
+    <div class="hero__scrim"></div>
+    <div class="hero__content">
+      <p class="eyebrow reveal">Careers</p>
+      <h1 class="h-display hero__title h-display--sub reveal">Work with<br>intention.</h1>
+      <p class="body-text hero__sub reveal">Join a room built around craft, generous service, and the quiet pride of doing the small things beautifully.</p>
+    </div>
+  </section>
+
+  <section class="section careers-section" aria-labelledby="careers-title">
+    <div class="container">
+      <div class="careers-intro reveal">
+        <div>
+          <p class="eyebrow">Open positions</p>
+          <h2 class="h2 section-head__title" id="careers-title">Find the role that fits your pace.</h2>
+        </div>
+        <p class="body-text">Browse restaurant vacancies, filter by role, and apply without leaving the page.</p>
+      </div>
+
+      <div class="careers-layout" data-careers-page>
+        <aside class="careers-listing-panel reveal" aria-label="Career openings">
+          <div class="careers-search">
+            <label class="form-label" for="careerSearch">Search vacancies</label>
+            <input class="input-text careers-search__input" type="search" id="careerSearch" placeholder="Search by title, department, or location" autocomplete="off" data-job-search>
+          </div>
+
+          <div class="careers-filters" aria-label="Filter vacancies">
+            <button class="career-chip is-active" type="button" data-filter="All">All Jobs</button>
+            <button class="career-chip" type="button" data-filter="Receptionist">Receptionist</button>
+            <button class="career-chip" type="button" data-filter="Waiter / Waitress">Waiter / Waitress</button>
+            <button class="career-chip" type="button" data-filter="Shift Supervisor">Shift Supervisor</button>
+            <button class="career-chip" type="button" data-filter="Kitchen Assistant">Kitchen Assistant</button>
+            <button class="career-chip" type="button" data-filter="Head Chef">Head Chef</button>
+            <button class="career-chip" type="button" data-filter="Bartender">Bartender</button>
+            <button class="career-chip" type="button" data-filter="Cleaner">Cleaner</button>
+            <button class="career-chip" type="button" data-filter="Events Coordinator">Events Coordinator</button>
+            <button class="career-chip" type="button" data-filter="Internship">Internship</button>
+          </div>
+
+          <div class="job-list" data-job-list aria-live="polite"></div>
+
+          <div class="careers-empty" data-empty-state hidden>
+            <div class="careers-empty__mark" aria-hidden="true"></div>
+            <h3 class="h4">No positions found.</h3>
+            <p class="label-text">Try a different search or reset the filters.</p>
+            <button class="btn btn-secondary" type="button" data-reset-filters>Reset Filters</button>
+          </div>
+        </aside>
+
+        <section class="career-detail-panel reveal" aria-label="Selected job details">
+          <div class="career-detail" data-job-detail tabindex="-1"></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section careers-cta reveal" aria-labelledby="careers-cta-title">
+    <div class="container careers-cta__inner">
+      <div>
+        <p class="careers-cta__eyebrow">Hospitality with care</p>
+        <h2 class="h2 careers-cta__title" id="careers-cta-title">Build a career in a room that notices the details.</h2>
+      </div>
+      <a href="contact.html" class="btn careers-cta__button">Speak to the Team</a>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section class="section social-section reveal-scope" aria-labelledby="social-title-home">
+    <div class="container">
+      <div class="social-section__head">
+        <span class="social-section__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M14.4 8.2V6.6c0-.7.5-.9.9-.9h2.2V2.1L14.4 2c-3.5 0-4.3 2.6-4.3 4.3v1.9H7.4V12h2.7v10h4.1V12h3.1l.5-3.8h-3.4Z"/>
+          </svg>
+        </span>
+        <h2 class="social-section__title" id="social-title-home">the_king_club facebook</h2>
+      </div>
+
+      <div class="social-section__strip" aria-label="Facebook highlights from KOFEO">
+        <div class="social-section__item"><img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=70" alt="Guests dining in a warm restaurant setting"></div>
+        <div class="social-section__item"><img loading="lazy" src="../assets/images/Screenshot_20260626-183615~2.png" alt="Chef preparing dishes during service"></div>
+        <div class="social-section__item"><img loading="lazy" src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=500&q=70" alt="Signature cocktail served at the bar"></div>
+        <div class="social-section__item"><img loading="lazy" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=500&q=70" alt="Fresh plated dish with herbs and vegetables"></div>
+        <div class="social-section__item"><img loading="lazy" src="../assets/images/Screenshot_20260626-183805~2.png" alt="Elegant table setting with wine glasses"></div>
+        <div class="social-section__item"><img loading="lazy" src="../assets/images/Screenshot_20260626-183648~2.png" alt="Restaurant bar with warm evening lighting"></div>
+      </div>
+
+      <div class="social-section__cta">
+        <a href="https://www.facebook.com/kc.kingclub" class="btn btn-secondary" target="_blank" rel="noopener">Follow on Facebook</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="application-modal" data-application-modal aria-hidden="true">
+  <div class="application-modal__overlay" data-close-application></div>
+  <div class="application-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="applicationTitle">
+    <button class="application-modal__close" type="button" aria-label="Close application form" data-close-application>Close</button>
+    <p class="eyebrow">Apply now</p>
+    <h2 class="h2" id="applicationTitle">Start your application</h2>
+    <p class="body-text application-modal__role" data-application-role>Selected role</p>
+    <form class="application-form" data-application-form novalidate>
+      <div class="form-grid">
+        <div class="form-field">
+          <label class="form-label" for="applicantName">Full name</label>
+          <input class="input-text" id="applicantName" name="name" type="text" required aria-describedby="applicantNameError">
+          <p class="form-error" id="applicantNameError" data-field-error></p>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="applicantEmail">Email</label>
+          <input class="input-text" id="applicantEmail" name="email" type="email" required aria-describedby="applicantEmailError">
+          <p class="form-error" id="applicantEmailError" data-field-error></p>
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-field">
+          <label class="form-label" for="applicantPhone">Phone</label>
+          <input class="input-text" id="applicantPhone" name="phone" type="tel">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="applicantPortfolio">LinkedIn or portfolio</label>
+          <input class="input-text" id="applicantPortfolio" name="portfolio" type="url" placeholder="https://" aria-describedby="applicantPortfolioError">
+          <p class="form-error" id="applicantPortfolioError" data-field-error></p>
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="applicantAddress">Residential address</label>
+        <input class="input-text" id="applicantAddress" name="address" type="text" autocomplete="street-address" required aria-describedby="applicantAddressError">
+        <p class="form-error" id="applicantAddressError" data-field-error></p>
+      </div>
+      <div class="form-field">
+        <span class="form-label" id="resumeUploadLabel">Resume</span>
+        <label class="file-upload" for="applicantResume" data-file-drop>
+          <input class="file-upload__input" id="applicantResume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required data-resume-input aria-labelledby="resumeUploadLabel" aria-describedby="resumeUploadHint resumeUploadError">
+          <span class="file-upload__content">
+            <span class="file-upload__title">Drop your resume here or browse</span>
+            <span class="file-upload__hint" id="resumeUploadHint">PDF, DOC, or DOCX only.</span>
+            <span class="file-upload__name" data-file-name>No file selected</span>
+          </span>
+        </label>
+        <p class="form-error" id="resumeUploadError" data-resume-error></p>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="applicantLetter">Motivational letter</label>
+        <textarea class="input-text input-text--long" id="applicantLetter" name="motivationalLetter" rows="9" required placeholder="Tell us why you'd like to join our team and why you're a great fit for this role." aria-describedby="applicantLetterError"></textarea>
+        <p class="form-error" id="applicantLetterError" data-field-error></p>
+      </div>
+      <button class="btn btn-primary application-form__submit" type="submit">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+<div class="career-toast" role="status" aria-live="polite" data-career-toast>Job link copied.</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+        <img src="../assets/images/King-logo.png" alt="Company Logo" class="footer__logo">
+      </a>
+      <p class="label-text" style="margin-top:20px;max-width:260px;">The King Club is a fine dining spot that offers a fusion of African and international cuisine, nestled in the heart of King William's Town.</p>
+    </div>
+    <div>
+      <p class="footer-col__title">Explore</p>
+      <a href="menu.html" class="footer-link">Menu</a>
+      <a href="about.html" class="footer-link">Story</a>
+      <a href="gallery.html" class="footer-link">Gallery</a>
+      <a href="contact.html" class="footer-link">Visit</a>
+      <a href="careers.html" class="footer-link">Careers</a>
+    </div>
+    <div>
+      <p class="footer-col__title">Visit</p>
+      <a href="contact.html" class="footer-link">27 Ayliff St, King William's Town, Eastern Cape, 5600</a>
+      <a href="contact.html" class="footer-link">10AM - 12AM (Mon - Thur)</a>
+      <a href="tel:+270436426117" class="footer-link">+27 (043) 642 6117</a>
+    </div>
+    <div>
+      <p class="footer-col__title">Stay in the loop</p>
+      <div class="footer-newsletter">
+        <input type="email" placeholder="Your email">
+        <button type="button">Sign up</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Kofeo. All rights reserved.</span>
+    <span>Proudly Designed and developed by Ababalwe Jali</span>
+    <span>Photography via Unsplash</span>
+  </div>
+</footer>
+
+<script src="../Java/script.js"></script>
+</body>
+</html>
