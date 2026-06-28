@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit — The King Club</title>
+<meta name="description" content="Find KOFEO, see our hours, and reserve a table for your next visit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<div class="curtain"><img src="../assets/images/King-logo.png" alt="Company Logo" class="curtain__logo"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="../assets/images/King-logo.png" alt="Company Logo" class="brand__logo">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="about.html" class="nav-link">Our Story</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="careers.html" class="nav-link">Careers</a></li>
+        <li><a href="contact.html" class="nav-link is-active">Visit Us</a></li>
+      </ul>
+      <a href="contact.html#reserve" class="btn btn-menu">Reserve</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero hero--page">
+    <div class="hero__bg">
+      <img src="../assets/images/spagetti.webp" alt="Soft evening light inside the dining room">
+    </div>
+    <div class="hero__scrim"></div>
+    <div class="hero__content">
+      <p class="eyebrow reveal">Visit</p>
+      <h1 class="h-display hero__title h-display--sub reveal">Come sit<br>with us.</h1>
+      <p class="body-text hero__sub reveal">Walk-ins are always welcome. For the busier hours, a held table makes things easier. The King Club is built on relationships, and we value connects. Come dine with us.</p>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="section">
+    <div class="container">
+      <div class="info-grid reveal">
+        <div>
+          <p class="info-card__label">Address</p>
+          <p class="h4">27 Ayliff Road<br>King William's Town, 5600</p>
+        </div>
+        <div>
+          <p class="info-card__label">Hours</p>
+          <p class="h4">Mon — Thur<br>10:00 — 00:00</p>
+        </div>
+        <div>
+          <p class="info-card__label">Contact</p>
+          <p class="h4">enquiries@kingclub.co.za<br>+27 (043) 642 6117</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="map-block reveal">
+        <svg viewBox="0 0 1200 514" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1200" height="514" fill="#161716"/>
+          <g stroke="#2a2a2a" stroke-width="1">
+            <line x1="0" y1="100" x2="1200" y2="80"/>
+            <line x1="0" y1="220" x2="1200" y2="240"/>
+            <line x1="0" y1="360" x2="1200" y2="340"/>
+            <line x1="150" y1="0" x2="120" y2="514"/>
+            <line x1="420" y1="0" x2="460" y2="514"/>
+            <line x1="780" y1="0" x2="740" y2="514"/>
+            <line x1="1020" y1="0" x2="1060" y2="514"/>
+          </g>
+        </svg>
+        <div class="map-block__pin">
+          <div class="map-block__pin-dot"></div>
+          <div class="map-block__pin-stem"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--directions" aria-labelledby="contact-directions-title">
+    <div class="container">
+      <div class="directions-cta reveal">
+        <p class="eyebrow directions-cta__eyebrow">Location</p>
+        <h2 class="h2 directions-cta__title" id="contact-directions-title">Find Us Easily</h2>
+        <p class="body-text directions-cta__text">Visit our office with confidence. Open Google Maps for turn-by-turn directions to our location.</p>
+        <a
+          href="https://www.google.com/maps/search/?api=1&amp;query=27%20Ayliff%20St%2C%20King%20William%27s%20Town%2C%20Eastern%20Cape%205600"
+          class="btn btn-directions"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Get directions to The King Club on Google Maps"
+          data-click-feedback
+        >
+          <span class="btn-directions__icon" aria-hidden="true"></span>
+          <span>Get Directions</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" style="max-width:1200px;margin:0 auto;">
+
+  <!-- RESERVATION FORM -->
+  <section class="section section--alt" id="reserve">
+    <div class="container grid-2" style="align-items:flex-start;">
+      <div class="reveal">
+        <p class="eyebrow">Reserve a Table</p>
+        <h2 class="h2 section-head__title">A few details, and we'll hold your seat.</h2>
+        <p class="body-text" style="margin-top:20px;">For parties of seven or more, write to us directly and we'll find the right spot in the room.</p>
+
+        <div class="form-success">
+          Thank you — your request has been sent. We'll confirm by email shortly.
+        </div>
+
+        <form id="reserveForm" style="margin-top:40px;">
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="name">Full name</label>
+              <input class="input-text" type="text" id="name" name="name" placeholder="Ababalwe Jali" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">Email</label>
+              <input class="input-text" type="email" id="email" name="email" placeholder="mellokuhlejali@gmail.com" required>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="date">Date</label>
+              <input class="input-text" type="date" id="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="time">Time</label>
+              <input class="input-text" type="time" id="time" name="time" required>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="party">Party size</label>
+              <input class="input-text" type="number" id="party" name="party" placeholder="2" min="1" max="6" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">Phone</label>
+              <input class="input-text" type="tel" id="phone" name="phone" placeholder="Optional">
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="message">Notes</label>
+            <textarea class="input-text" id="message" name="message" placeholder="Allergies, occasions, seating preference..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:8px;">Request Table</button>
+        </form>
+      </div>
+
+      <div class="img-reveal img-ratio-portrait" style="position:sticky;top:120px;">
+        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=900&q=70" alt="A set table waiting for guests">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section reveal-scope">
+    <div class="container faq-section__grid">
+      <div class="faq-section__media">
+        <div class="img-reveal">
+          <img src="../assets/images/Screenshot_20260626-183547~2.png" alt="Restaurant dining room arranged for reserved guests">
+        </div>
+      </div>
+      <div class="faq-section__content">
+        <div class="faq-section__head">
+          <p class="eyebrow">Questions</p>
+          <h2 class="h2 section-head__title">Planning your visit</h2>
+          <p class="body-text">Everything useful before you arrive, from table requests to larger bookings and service timing.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-item__button" type="button" id="contact-faq-q1" aria-expanded="false" aria-controls="contact-faq-a1">
+              <span>How far ahead should I reserve?</span>
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__panel" id="contact-faq-a1" role="region" aria-labelledby="contact-faq-q1">
+              <p>For weekends, reserve a few days ahead where possible. Same-day requests are welcome and we will always do what we can.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__button" type="button" id="contact-faq-q2" aria-expanded="false" aria-controls="contact-faq-a2">
+              <span>Can I request a specific table?</span>
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__panel" id="contact-faq-a2" role="region" aria-labelledby="contact-faq-q2">
+              <p>Yes. Add the request to your booking notes and we will prioritize it based on the shape of service that day.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__button" type="button" id="contact-faq-q3" aria-expanded="false" aria-controls="contact-faq-a3">
+              <span>Do you accept larger parties?</span>
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__panel" id="contact-faq-a3" role="region" aria-labelledby="contact-faq-q3">
+              <p>For parties of seven or more, contact us directly so we can confirm the right seating arrangement and service pace.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__button" type="button" id="contact-faq-q4" aria-expanded="false" aria-controls="contact-faq-a4">
+              <span>What should I do if I am running late?</span>
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__panel" id="contact-faq-a4" role="region" aria-labelledby="contact-faq-q4">
+              <p>Call us as soon as you can. We hold tables briefly and will help adjust the booking if service allows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section class="section social-section reveal-scope" aria-labelledby="social-title-contact">
+    <div class="container">
+      <div class="social-section__head">
+        <span class="social-section__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M14.4 8.2V6.6c0-.7.5-.9.9-.9h2.2V2.1L14.4 2c-3.5 0-4.3 2.6-4.3 4.3v1.9H7.4V12h2.7v10h4.1V12h3.1l.5-3.8h-3.4Z"/>
+          </svg>
+        </span>
+        <h2 class="social-section__title" id="social-title-contact">the_king_club_facebook</h2>
+      </div>
+
+      <div class="social-section__strip" aria-label="Facebook highlights from KOFEO">
+        <div class="social-section__item"><img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=70" alt="Guests dining in a warm restaurant setting"></div>
+        <div class="social-section__item"><img loading="lazy" src="../assets/images/Screenshot_20260626-183547~2.png" alt="Chef preparing dishes during service"></div>
+        <div class="social-section__item"><img loading="lazy" src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=500&q=70" alt="Signature cocktail served at the bar"></div>
+        <div class="social-section__item"><img loading="lazy" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=500&q=70" alt="Fresh plated dish with herbs and vegetables"></div>
+        <div class="social-section__item"><img loading="lazy" src="../assets/images/1782492962006.jpg" alt="Elegant table setting with wine glasses"></div>
+        <div class="social-section__item"><img loading="lazy" src="../assets/images/Screenshot_20260626-183306~2.png" alt="Restaurant bar with warm evening lighting"></div>
+      </div>
+
+      <div class="social-section__cta">
+        <a href="https://www.facebook.com/kc.kingclub" class="btn btn-secondary" target="_blank" rel="noopener">Follow on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+        <img src="../assets/images/King-logo.png" alt="Company Logo" class="footer__logo">
+      </a>
+      <p class="label-text" style="margin-top:20px;max-width:260px;">The King Club is a fine dining spot that offers a fusion of African and international cuisine, Nestled in the heart of King William's Town.</p>
+    </div>
+    <div>
+      <p class="footer-col__title">Explore</p>
+      <a href="menu.html" class="footer-link">Menu</a>
+      <a href="about.html" class="footer-link">Story</a>
+      <a href="gallery.html" class="footer-link">Gallery</a>
+      <a href="contact.html" class="footer-link">Visit</a>
+      <a href="careers.html" class="footer-link">Careers</a>
+    </div>
+    <div>
+      <p class="footer-col__title">Visit</p>
+      <a href="contact.html" class="footer-link">27 Ayliff St, King William's Town, Eastern Cape, 5600</a>
+      <a href="contact.html" class="footer-link">10AM — 12AM (Mon - Thur)</a>
+      <a href="tel:+10000000000" class="footer-link">+27 (043) 642 6117</a>
+    </div>
+    <div>
+      <p class="footer-col__title">Stay in the loop</p>
+      <div class="footer-newsletter">
+        <input type="email" placeholder="Your email">
+        <button type="button">Sign up</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Kofeo. All rights reserved.</span>
+    <span>Proudly Designed and developed by Ababalwe Jali</span>
+    <span>Photography via Unsplash</span>
+  </div>
+</footer>
+
+<script src="../Java/script.js"></script>
+</body>
+</html>
